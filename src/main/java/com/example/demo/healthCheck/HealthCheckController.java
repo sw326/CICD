@@ -31,9 +31,10 @@ public class HealthCheckController {
         responeseData.put("env",env);
         return ResponseEntity.ok(responeseData);
     }
-
+    //
     @GetMapping("/env")
     public ResponseEntity<?> getEnv(){
         return ResponseEntity.ok(env);
     }
 }
+
